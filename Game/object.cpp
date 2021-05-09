@@ -18,16 +18,25 @@ void Object::slotGameTimer()
         flag = true;
         this->setX(this->x() - 1);
         this->direction = left;
+
+        if (!scene()->collidingItems(this).isEmpty())
+            this->setX(this->x() + 1);
     }
     else if(GetAsyncKeyState('D'))
     {
         flag = false;
         this->setX(this->x() + 1);
         this->direction = right;
+
+        if (!scene()->collidingItems(this).isEmpty())
+            this->setX(this->x() - 1);
     }
     else if(GetAsyncKeyState('W'))
     {
         this->setY(this->y() - 1);
+
+        if (!scene()->collidingItems(this).isEmpty())
+            this->setY(this->y() + 1);
 
         if (flag)
             this->direction = up_left;
@@ -37,6 +46,9 @@ void Object::slotGameTimer()
     else if(GetAsyncKeyState('S'))
     {
         this->setY(this->y() + 1);
+
+        if (!scene()->collidingItems(this).isEmpty())
+            this->setY(this->y() - 1);
 
         if (flag)
             this->direction = down_left;

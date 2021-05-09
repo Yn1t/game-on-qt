@@ -12,6 +12,7 @@
 #include "object.h"
 #include "sprite_hero.h"
 #include "bridge.h"
+#include "forest.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }

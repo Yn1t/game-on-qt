@@ -11,18 +11,24 @@ CONFIG += c++11
 SOURCES += \
     bridge.cpp \
     custom_scene.cpp \
+    forest.cpp \
+    invisible_wall.cpp \
     main.cpp \
     mainwindow.cpp \
     object.cpp \
     sprite_hero.cpp \
+    static_object.cpp \
     triangle.cpp
 
 HEADERS += \
     bridge.h \
     custom_scene.h \
+    forest.h \
+    invisible_wall.h \
     mainwindow.h \
     object.h \
     sprite_hero.h \
+    static_object.h \
     triangle.h
 
 FORMS += \

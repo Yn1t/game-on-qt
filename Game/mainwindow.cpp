@@ -9,25 +9,29 @@ MainWindow::MainWindow(QWidget *parent)
     this->setWindowState(Qt::WindowFullScreen);
 
     graphicsView = new QGraphicsView(this);
-    scene = new Bridge();
+    //scene = new Bridge();
+    scene = new Forest();
     graphicsView->setScene(scene);
 
     graphicsView->setGeometry(this->geometry());
     graphicsView->setSceneRect(this->rect());
+
+
     graphicsView->setRenderHint(QPainter::Antialiasing);
     graphicsView->setVerticalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
     graphicsView->setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
+
     scene->setSceneRect(this->rect());
 
-    hero = new Sprite_hero();
+    //hero = new Sprite_hero();
 
-    hero->setPos(200, 200);
-    scene->addItem(hero);
+    //hero->setPos(0, 540);
+    //scene->addItem(hero);
 
 
-    timer = new QTimer();
-    connect(timer, &QTimer::timeout, hero, &Sprite_hero::slotGameTimer);
-    timer->start(1000/500);
+    //timer = new QTimer();
+    //connect(timer, &QTimer::timeout, hero, &Sprite_hero::slotGameTimer);
+    //timer->start(1000/500);
 }
 
 MainWindow::~MainWindow()

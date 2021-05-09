@@ -8,7 +8,7 @@
 #include <QPolygon>
 #include <QTimer>
 #include <QDebug>
-#include <QCursor>
+
 #include <windows.h>
 
 class Object : public QGraphicsItem, public QObject
