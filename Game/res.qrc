@@ -1,0 +1,13 @@
+<RCC>
+    <qresource prefix="/">
+        <file>dwarf_sprites/Dwarf_walk_right.png</file>
+        <file>dwarf_sprites/Dwarf_waiting.png</file>
+        <file>dwarf_sprites/Dwarf_walk_left.png</file>
+        <file>dwarf_sprites/Dwarf_walk_down_left.png</file>
+        <file>dwarf_sprites/Dwarf_walk_down_right.png</file>
+        <file>dwarf_sprites/Dwarf_walk_up_left.png</file>
+        <file>dwarf_sprites/Dwarf_walk_up_right.png</file>
+        <file>dwarf_sprites/Dwarf_waiting_left.png</file>
+        <file>scene_sprites/bridge.png</file>
+    </qresource>
+</RCC>
