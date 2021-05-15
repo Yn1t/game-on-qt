@@ -5,7 +5,7 @@ Forest::Forest(QObject* parent) : custom_scene(parent)
     mapImage_Forest = new QPixmap(":/scene_sprites/forest.png");
     this->setBackgroundBrush(*mapImage_Forest);
 
-    for (int i = 0; i < 250; ++i)
+    for (int i = 0; i < 256; ++i)
     {
         invisible_tree[i] = new Invisible_wall(this);
         this->addItem(invisible_tree[i]);
@@ -50,7 +50,7 @@ Forest::Forest(QObject* parent) : custom_scene(parent)
         invisible_tree[i]->setPos(j, 1040);
     }
 
-    for (j = 1200; i < 230; j += 40, ++i)
+    for (j = 1250; i < 230; j += 40, ++i)
     {
         invisible_tree[i]->setPos(j, 910);
         i += 1;
@@ -69,25 +69,41 @@ Forest::Forest(QObject* parent) : custom_scene(parent)
 
     }
 
-    for (j = 730; i < 246; j += 40, ++i)
+    for (j = 690; i < 246; j += 40, ++i)
     {
         invisible_tree[i]->setPos(1900, j);
         i += 1;
         invisible_tree[i]->setPos(1940, j);
     }
 
-    for (j = 840; i < 250; j += 40, ++i)
+    for (j = 820; i < 250; j += 40, ++i)
     {
         invisible_tree[i]->setPos(1840, j);
         i += 1;
         invisible_tree[i]->setPos(1880, j);
+    }
+
+    for (j = 240; i < 254; j += 40, ++i)
+    {
+        invisible_tree[i]->setPos(0, j);
+        i += 1;
+        invisible_tree[i]->setPos(40, j);
+    }
+
+    for (j = 240; i < 256; j += 40, ++i)
+    {
+        invisible_tree[i]->setPos(1900, j);
     }
 }
 
 Forest::~Forest()
 {
     delete mapImage_Forest;
+    //timer->stop();
+    //delete timer;
 
-    for (int i = 0; i < 250; ++i)
+    for (int i = 0; i < 256; ++i)
         delete invisible_tree[i];
 }
+
+

@@ -7,7 +7,6 @@
 
 #include "custom_scene.h"
 #include "invisible_wall.h"
-#include "static_object.h"
 
 class Forest : public custom_scene
 {
@@ -17,7 +16,8 @@ public:
 
 private:
     QPixmap* mapImage_Forest;
-    Static_object* invisible_tree[250];
+    Static_object* invisible_tree[256];
+    Essence* slime;
 };
 
 #endif // FOREST_H

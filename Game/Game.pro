@@ -10,26 +10,34 @@ CONFIG += c++11
 
 SOURCES += \
     bridge.cpp \
+    button.cpp \
     custom_scene.cpp \
+    dungeon_top.cpp \
+    essence.cpp \
     forest.cpp \
     invisible_wall.cpp \
+    lava_room.cpp \
     main.cpp \
     mainwindow.cpp \
-    object.cpp \
+    menu.cpp \
+    slime.cpp \
     sprite_hero.cpp \
-    static_object.cpp \
-    triangle.cpp
+    static_object.cpp
 
 HEADERS += \
     bridge.h \
+    button.h \
     custom_scene.h \
+    dungeon_top.h \
+    essence.h \
     forest.h \
     invisible_wall.h \
+    lava_room.h \
     mainwindow.h \
-    object.h \
+    menu.h \
+    slime.h \
     sprite_hero.h \
-    static_object.h \
-    triangle.h
+    static_object.h
 
 FORMS += \
     mainwindow.ui

@@ -3,10 +3,11 @@
 
 #include <QPixmap>
 #include <QPainter>
+#include <QTimer>
 
 #include "custom_scene.h"
 #include "invisible_wall.h"
-#include "static_object.h"
+#include "sprite_hero.h"
 
 class Bridge : public custom_scene
 {
@@ -15,6 +16,7 @@ public:
     ~Bridge();
 
 private:
+    //QTimer* timer;
     QPixmap* mapImage_Bridge;
     Static_object* stones[96];
 };
